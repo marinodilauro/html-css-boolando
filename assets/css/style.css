@@ -72,6 +72,10 @@ img {
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 100%;
+    position: fixed;
+    z-index: 1000;
+    box-shadow: 0 0 4px 0 var(--boolenado-dark);
 }
 
 .header_container {
@@ -110,6 +114,7 @@ img {
     display: flex;
     justify-content: center;
     align-items: center;
+    padding-top: 3.5rem;
 }
 
 /* Products list */
