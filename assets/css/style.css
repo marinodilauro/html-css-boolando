@@ -4,7 +4,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    /* border: 1px dashed; */
+    border: 1px dashed;
 }
 
 :root {
@@ -23,26 +23,22 @@ body {
 
 /* #region Debug rules */
 
-.debug {}
 
 /* #endregion Debug rules */
 
 /* #region Common rules */
 
-.container {
-    display: flex;
-    align-items: center;
-    width: 70%;
-    justify-content: space-around;
-}
-
 nav {
-    padding: 0.5rem;
+    padding: 0.5rem 0;
 }
 
 a {
     color: var(--booleando-lighter);
     text-decoration: none;
+}
+
+img {
+    max-width: 100%;
 }
 
 /* #endregion Common rules */
@@ -57,6 +53,13 @@ a {
     align-items: center;
 }
 
+.header_container {
+    display: flex;
+    align-items: center;
+    width: 70%;
+    justify-content: space-between;
+}
+
 .logo,
 .links,
 .account_icons {
@@ -66,7 +69,6 @@ a {
 .logo,
 .account_icons {
     display: flex;
-    flex-grow: 1;
     align-items: center;
     width: 30%;
 }
@@ -74,10 +76,12 @@ a {
 .links,
 .account_icons {
     gap: 1rem;
+    width: 20%;
 }
 
 .logo {
     justify-content: center;
+    flex-grow: 2;
 }
 
 .links {
@@ -85,7 +89,6 @@ a {
     justify-content: flex-start;
     align-items: center;
     list-style-type: none;
-    flex-grow: 3;
     color: var(--discord-lighter);
     font-size: 0.75rem;
     font-weight: 600;
@@ -96,3 +99,37 @@ a {
 }
 
 /* #endregion Header */
+
+/* #region Main */
+
+#site_main {
+    background-color: var(--booleando-lighter);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.products_container {
+    width: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 2rem 1rem;
+    padding: 3rem 0;
+}
+
+.product_card {
+    width: 32.4%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.product_description {
+    align-self: flex-start;
+    list-style: none;
+}
+
+/* #endregion Main */
