@@ -1,0 +1,98 @@
+/* #region Utilities */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* border: 1px dashed; */
+}
+
+:root {
+    --booleando-primary: rgba(255, 105, 0, 1);
+    --booleando-light: rgba(227, 227, 227, 1);
+    --booleando-lighter: rgba(255, 255, 255, 1);
+    --booleando-discount: rgba(255, 0, 0, 1);
+    --discord-sustainability: rgba(0, 128, 0, 1);
+}
+
+body {
+    font-family: 'Public Sans', sans-serif;
+}
+
+/* #endregion Utilities */
+
+/* #region Debug rules */
+
+.debug {}
+
+/* #endregion Debug rules */
+
+/* #region Common rules */
+
+.container {
+    display: flex;
+    align-items: center;
+    width: 70%;
+    justify-content: space-around;
+}
+
+nav {
+    padding: 0.5rem;
+}
+
+a {
+    color: var(--booleando-lighter);
+    text-decoration: none;
+}
+
+/* #endregion Common rules */
+
+/* #region Header */
+
+#site_header {
+    background-color: var(--booleando-primary);
+    color: var(--booleando-lighter);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo,
+.links,
+.account_icons {
+    padding: 0.5rem 0;
+}
+
+.logo,
+.account_icons {
+    display: flex;
+    flex-grow: 1;
+    align-items: center;
+    width: 30%;
+}
+
+.links,
+.account_icons {
+    gap: 1rem;
+}
+
+.logo {
+    justify-content: center;
+}
+
+.links {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    list-style-type: none;
+    flex-grow: 3;
+    color: var(--discord-lighter);
+    font-size: 0.75rem;
+    font-weight: 600;
+}
+
+.account_icons {
+    justify-content: flex-end;
+}
+
+/* #endregion Header */
