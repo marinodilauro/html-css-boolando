@@ -243,6 +243,7 @@ img {
 }
 
 .social_icons {
+    display: flex;
     gap: 0.5rem;
 }
 
