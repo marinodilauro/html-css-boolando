@@ -21,8 +21,10 @@ body {
 
 .d-flex {
     display: flex;
-    align-items: center;
-    justify-content: center;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    gap: 0.5rem;
 }
 
 /* #endregion Utilities */
@@ -35,7 +37,7 @@ body {
 /* #region Common rules */
 
 nav {
-    padding: 0.5rem 0;
+    padding: 1rem 0;
 }
 
 a {
@@ -45,6 +47,16 @@ a {
 
 img {
     max-width: 100%;
+}
+
+.links {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    list-style-type: none;
+    color: var(--booleando-lighter);
+    font-size: 0.75rem;
+    gap: 1rem;
 }
 
 /* #endregion Common rules */
@@ -67,41 +79,23 @@ img {
 }
 
 .logo,
-.links,
-.account_icons {
-    padding: 0.5rem 0;
-}
-
-.logo,
 .account_icons {
     display: flex;
     align-items: center;
-    width: 30%;
-}
-
-.links,
-.account_icons {
-    gap: 1rem;
-    width: 20%;
 }
 
 .logo {
     justify-content: center;
-    flex-grow: 2;
+    width: 40%;
 }
 
-.links {
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    list-style-type: none;
-    color: var(--booleando-lighter);
-    font-size: 0.75rem;
+.product_section_links {
     font-weight: 600;
 }
 
 .account_icons {
     justify-content: flex-end;
+    gap: 1rem;
 }
 
 /* #endregion Header */
@@ -223,11 +217,11 @@ img {
     align-items: center;
     justify-content: space-between;
     width: 70%;
+    padding: 2rem 0;
 }
 
-.social_links {
-    flex-direction: column;
-    gap: 0.5rem;
+.company_and_information {
+    align-items: flex-start;
 }
 
 .social_icons {
