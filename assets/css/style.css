@@ -4,7 +4,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    border: 1px dashed;
 }
 
 :root {
@@ -12,7 +11,7 @@
     --booleando-light: rgba(227, 227, 227, 1);
     --booleando-lighter: rgba(255, 255, 255, 1);
     --booleando-discount: rgba(255, 0, 0, 1);
-    --discord-sustainability: rgba(0, 128, 0, 1);
+    --booleando-sustainability: rgba(0, 128, 0, 1);
 }
 
 body {
@@ -89,7 +88,7 @@ img {
     justify-content: flex-start;
     align-items: center;
     list-style-type: none;
-    color: var(--discord-lighter);
+    color: var(--booleando-lighter);
     font-size: 0.75rem;
     font-weight: 600;
 }
@@ -109,6 +108,7 @@ img {
     align-items: center;
 }
 
+/* Products list */
 .products_container {
     width: 70%;
     display: flex;
@@ -119,6 +119,7 @@ img {
     padding: 3rem 0;
 }
 
+/* Product */
 .product_card {
     width: 32.4%;
     display: flex;
@@ -127,9 +128,75 @@ img {
     flex-wrap: wrap;
 }
 
+.product_image {
+    position: relative;
+}
+
+.like,
+.badges {
+    position: absolute;
+}
+
+.badges {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    bottom: 8%;
+    gap: 0.5rem;
+}
+
+.like {
+    width: 10%;
+    height: 6%;
+    background-color: var(--booleando-lighter);
+    top: 1%;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.discount,
+.sustainability {
+    padding: 0.3rem 0.5rem;
+    font-size: 0.7rem;
+    font-weight: bold;
+}
+
+.discount {
+    background-color: var(--booleando-discount);
+    color: var(--booleando-lighter);
+}
+
+.sustainability {
+    background-color: var(--booleando-sustainability);
+    color: var(--booleando-lighter);
+}
+
 .product_description {
     align-self: flex-start;
     list-style: none;
+}
+
+.product_brand {
+    font-size: 0.8rem;
+}
+
+.product_name {
+    font-weight: bold;
+}
+
+.product_price {
+    font-size: 0.9rem;
+}
+
+.discount_price {
+    font-weight: bold;
+    color: var(--booleando-discount);
+}
+
+.old_price {
+    text-decoration: line-through;
 }
 
 /* #endregion Main */
