@@ -29,11 +29,6 @@ body {
 
 /* #endregion Utilities */
 
-/* #region Debug rules */
-
-
-/* #endregion Debug rules */
-
 /* #region Common rules */
 
 nav {
@@ -128,7 +123,8 @@ img {
     padding: 3rem 0;
 }
 
-/* Product */
+/* #region Product card */
+
 .product_card {
     width: 32.4%;
     display: flex;
@@ -138,6 +134,7 @@ img {
     position: relative;
 }
 
+/* Image */
 .image {
     position: relative;
     display: inline-block;
@@ -150,6 +147,8 @@ img {
     left: 0;
 }
 
+
+/* Badges */
 .like,
 .badges {
     position: absolute;
@@ -216,6 +215,8 @@ img {
 .old_price {
     text-decoration: line-through;
 }
+
+/* #endregion Product card */
 
 /* #endregion Main */
 
